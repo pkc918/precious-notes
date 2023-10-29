@@ -40,5 +40,9 @@ Temporary Items
 .idea
 .vscode
 
+# .air
+pre_cmd.txt
+post_cmd.txt
+
 # Custom
 /_output
