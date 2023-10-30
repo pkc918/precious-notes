@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"os"
+	"precious-notes/internal/preciousnotes"
+)
 
 func main() {
-	fmt.Println("Hello precious-notes")
+	command := preciousnotes.NewPreciousNotesCommand()
+	if err := command.Execute(); err != nil {
+		os.Exit(1)
+	}
 }
